@@ -1,6 +1,7 @@
 github_users:
   - torvalds
   - alshedivat
+  - longdoan189
 
 github_repos:
   - alshedivat/al-folio
@@ -10,3 +11,4 @@ github_repos:
   - FortAwesome/Font-Awesome
   - jpswalsh/academicons
   - mathjax/MathJax
+  - longdoan189/mindfulbright
