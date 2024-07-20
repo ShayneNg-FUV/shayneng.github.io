@@ -1,8 +1,10 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+title: I completed my final course at HKU
+date: 2024-07-08 15:59:00-0400
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement.
+I finally received the grade for my final course at HKU. The graduation formalities will be completed to release my academic document soon, but my congregation will be held around November/December.
+

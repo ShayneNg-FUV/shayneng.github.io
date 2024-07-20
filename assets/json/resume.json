@@ -1,36 +1,37 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Dung (Shayne) Nguyen",
+    "label": "",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
+    "email": "tridng592000@gmail.com",
+    "phone": "(852) 6890-3932",
     "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "A Vietnamese-born researcher with an interest in employing quantitative methods to study social science ",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "",
+      "postalCode": "",
+      "city": "Hong Kong SAR",
+      "countryCode": "HK",
+      "region": ""
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "",
+        "username": "",
+        "url": ""
       }
     ]
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Vietnam Chamber of Commerce and Industry (VCCI)",
+      "position": "Economics Consultant",
+      "url": "",
+      "startDate": "2024-07-01",
+      "endDate": "Now",
+      "summary": "Collaborate with the team to create a macroeconomics report for local governments of four provinces including Quang Ninh, Hai Phong, Hai
+      Duong, and Hung Yen",
+      "highlights": [""]
     }
   ],
   "volunteer": [
