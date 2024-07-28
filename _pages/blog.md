@@ -58,25 +58,27 @@ pagination:
 
 
 {% if site.display_tags or site.display_categories %}
-<div class="tag-category-list">
-    <!-- First line of categories only -->
-    <ul class="p-0 m-0">
-        {% for category in site.display_categories %}
-            <li>
-                <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-    <!-- Second line of tags -->
-    <ul class="p-0 m-0">
-        {% for tag in site.display_tags %}
-            <li>
-                <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
-            </li>
-        {% endfor %}
-    </ul>
-</div>
-{% endif %}
+
+
+  <div class="tag-category-list">
+      <!-- First line of categories only -->
+      <ul class="p-0 m-0">
+          {% for category in site.display_categories %}
+              <li>
+                  <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+              </li>
+          {% endfor %}
+      </ul>
+      <!-- Second line of tags -->
+      <ul class="p-0 m-0">
+          {% for tag in site.display_tags %}
+              <li>
+                  <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+              </li>
+          {% endfor %}
+      </ul>
+  </div>
+  {% endif %}
 
 {% assign featured_posts = site.posts | where: "featured", "true" %}
 {% if featured_posts.size > 0 %}
