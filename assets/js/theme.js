@@ -2,13 +2,13 @@
 
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
-  let themeSetting = "dark";
+  let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
-    setThemeSetting("dark");
-  } else if (themeSetting == "dark") {
+    setThemeSetting("light");
+  } else if (themeSetting == "light") {
     setThemeSetting("dark");
   } else {
-    setThemeSetting("dark");
+    setThemeSetting("system");
   }
 };
 
