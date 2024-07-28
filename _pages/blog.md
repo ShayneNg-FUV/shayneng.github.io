@@ -29,7 +29,7 @@ pagination:
   </div>
   {% endif %}
 
-{% if site.display_tags or site.display_categories %}
+<!-- {% if site.display_tags or site.display_categories %}
 
   <div class="tag-category-list">
     <ul class="p-0 m-0">
@@ -53,6 +53,50 @@ pagination:
         {% endunless %}
       {% endfor %}
     </ul>
+  </div>
+  {% endif %} -->
+
+{% if site.display_tags or site.display_categories %}
+  <div class="tag-category-list">
+      <!-- First line of tags (excluding 'learning') -->
+      <ul class="p-0 m-0">
+          {% assign tag_count = 0 %}
+          {% assign last_tag_index = site.display_tags.size | minus: 1 %}
+          {% for tag in site.display_tags %}
+              {% if tag != "learning" %}
+                  {% assign tag_count = tag_count | plus: 1 %}
+                  <li>
+                      <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ tag | slugify | prepend: '/blog/tag/' | relative_url }}">{{ tag }}</a>
+                  </li>
+                  {% unless forloop.last or tag_count == last_tag_index %}
+                      <p>&bull;</p>
+                  {% endunless %}
+              {% endif %}
+          {% endfor %}
+      </ul>
+      
+      <!-- Second line of tags -->
+      <ul class="p-0 m-0">
+          {% if site.display_tags contains "learning" %}
+              <li>
+                  <i class="fa-solid fa-hashtag fa-sm"></i> <a href="{{ 'learning' | slugify | prepend: '/blog/tag/' | relative_url }}">learning</a>
+              </li>
+          {% endif %}
+          {% if site.display_categories.size > 0 and site.display_tags contains "learning" %}
+              <p>&bull;</p>
+          {% endif %}
+          
+          {% assign category_count = 0 %}
+          {% for category in site.display_categories %}
+              {% assign category_count = category_count | plus: 1 %}
+              <li>
+                  <i class="fa-solid fa-tag fa-sm"></i> <a href="{{ category | slugify | prepend: '/blog/category/' | relative_url }}">{{ category }}</a>
+              </li>
+              {% unless forloop.last %}
+                  <p>&bull;</p>
+              {% endunless %}
+          {% endfor %}
+      </ul>
   </div>
   {% endif %}
 
